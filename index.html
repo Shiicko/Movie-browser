@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buscador de Películas</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="/ico/icon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="title">Buscador de Películas</h1>
+        <div class="search-container">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Buscar película..."
+          />
+          <button id="searchButton">Buscar</button>
+        </div>
+      </div>
+    </header>
+    <div id="errorModal" class="modal">
+      <div class="modal-content">
+        <span class="close" style="display: none">&times;</span>
+        <p id="errorMessage"></p>
+      </div>
+    </div>
+
+    <main id="mainContent"><div class="spinner" id="spinner"></div></main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
